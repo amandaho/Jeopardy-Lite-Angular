@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #questionfont {
     color: white;
 }
@@ -8,10 +9,19 @@ textarea {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+=======
+textarea {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+>>>>>>> 72d346287a849cf5dc512a9251ed1bed533140aa
 
 }
 
 .focusedInput {
+<<<<<<< HEAD
     border-color: rgba(82,168,236,.8);
     outline: 0;
     outline: thin dotted \9;
@@ -21,4 +31,15 @@ textarea {
 
 #grad {
     background: radial-gradient(pink, purple, blue);
+=======
+   border-color: rgba(82,168,236,.8);
+   outline: 0;
+   outline: thin dotted \9;
+   -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+   box-shadow: 0 0 8px rgba(82,168,236,.6) !important;
+}
+
+#grad {
+   background: radial-gradient(pink, purple, blue);
+>>>>>>> 72d346287a849cf5dc512a9251ed1bed533140aa
 }
