@@ -1,18 +1,5 @@
 <!--The whole content below can be removed with the new code.-->
 <div style="text-align:center" id="grad">
-<<<<<<< HEAD
-  
-    <div class="jumbotron">
-    <h1>
-    Welcome to {{title}}!!
-    </h1>
-    </div>
-  <div id="questionfont">
- <h3>Category</h3> <span>{{questions?.category?.title | titlecase}}</span>
-  <h3>Points</h3> <span>{{questions?.value}}</span>
-  <h3>Question</h3> <span>{{questions?.question | titlecase}}</span>
-  
-=======
 
   <div class="jumbotron">
     <h1>
@@ -34,13 +21,5 @@
   </div>
 
   <app-answer [answers]='answers'></app-answer>
->>>>>>> 72d346287a849cf5dc512a9251ed1bed533140aa
 
- <div>
-    <div><textarea class="form-control focusedInput" [(ngModel)]="enterAnswer" style="width:500px;height:100px;" placeholder="Enter Answer Here"></textarea></div>
-    <div><button (click)="onClick()" id="submitButton" class="btn btn-primary">Submit</button>
-  </div>
-  <h3>User's Score:</h3><span id="score">{{score}}</span>
-  </div>
-</div>
-<app-answer [answers]='answers'></app-answer>
+ 

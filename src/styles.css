@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
-body {
-font-family: 'Open Sans', sans-serif;
-font-family: 'Press Start 2P', cursive;
+#bodytext {
+    color: white;
 }
-=======
 
->>>>>>> 72d346287a849cf5dc512a9251ed1bed533140aa
