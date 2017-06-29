@@ -1,11 +1,21 @@
-textarea {
+h1 {
     color: black;
+}
+
+img {
+    height: 250px;
+}
+
+span {
+    font-size: 18px;
+}
+textarea {
+   color: black;
    margin-left: auto;
    margin-right: auto;
    margin-top: 10px;
    margin-bottom: 10px;
    text-align: center;
-
 }
 
 .focusedInput {

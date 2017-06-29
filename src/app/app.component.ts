@@ -10,27 +10,21 @@ import { JeopardyService } from './jeopardy.service'
 export class AppComponent implements OnInit {
   title = 'Jeopardy Lite';
 
-  questions: any;
+  question: any;
   score: number = 0;
-  errorMessage: string;
-  successMessage: string;
   enterAnswer: string;
-  answers: string;
+  answer: string;
 
 
   constructor(private JeopardyService: JeopardyService){}
 
-  getQuestions(){
+  getQuestion(){
     this.JeopardyService.getRecords("question")
       .subscribe(
-          questions => {
-            this.questions = questions[0] 
-          console.log(this.questions);
-          console.log(this.questions.answer);
-        },
-        error => {
-          this.errorMessage = <any>error; 
-          console.log(this.errorMessage)
+          question => {
+            this.question = question[0] 
+          console.log(this.question);
+          console.log(this.question.answer);
         }
       );
         
@@ -38,25 +32,25 @@ export class AppComponent implements OnInit {
 
   onClick() {
     console.log(this.enterAnswer);
-    if (this.enterAnswer == this.questions.answer){
+    if (this.enterAnswer == this.question.answer){
         console.log("true");
-        // console.log(this.questions.value);
+        // console.log(this.question.value);
         // console.log(this.score)
-        this.score = this.score += this.questions.value;
-        this.answers = "You're right!";
+        this.score += this.question.value;
+        this.answer = "You are right!";
       } else {
        console.log("false");
-       this.answers="Sorry, the answer is: " + this.questions.answer;
+       this.answer="Sorry, the answer is: " + this.question.answer;
        
       }
-    this.getQuestions();
-    this.enterAnswer= " ";
+    this.getQuestion();
+    this.enterAnswer= "";
   }
 
 
   ngOnInit() {
 
-    this.getQuestions();
+    this.getQuestion();
    
   }
 

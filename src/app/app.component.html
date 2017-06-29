@@ -8,9 +8,9 @@
   <img src="assets/images/ht_alex_trebek_mustache_jeopardy_1_jc_140911_16x9_992.jpg" class="img-circle" alt="Alex">
   </div>
   
-  <h3>Category</h3> <span>{{questions?.category?.title | titlecase}}</span>
-  <h3>Points</h3> <span>{{questions?.value }}</span>
-  <h3>Question</h3> <span>{{questions?.question | titlecase }}</span>
+  <h3>Category</h3> <span>{{question?.category?.title | titlecase}}</span>
+  <h3>Points</h3> <span>{{question?.value }}</span>
+  <h3>Question</h3> <span>{{question?.question | titlecase }}</span>
   
 
   <div>
@@ -20,6 +20,6 @@
   <h3>User's Score:</h3><span id="score">{{score}}</span>
   </div>
 
-  <app-answer [answers]='answers'></app-answer>
+  <app-answer [answer]='answer'></app-answer>
 
  
