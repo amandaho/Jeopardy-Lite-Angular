@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'Jeopardy Lite';
 
   questions: any;
-  score = 0;
+  score: number = 0;
   errorMessage: string;
   successMessage: string;
   enterAnswer: string;
@@ -49,13 +49,9 @@ export class AppComponent implements OnInit {
        this.answers="Sorry, the answer is: " + this.questions.answer;
        
       }
-      this.getQuestions();
-      this.enterAnswer= " ";
+    this.getQuestions();
+    this.enterAnswer= " ";
   }
-
-
-  
-
 
 
   ngOnInit() {
